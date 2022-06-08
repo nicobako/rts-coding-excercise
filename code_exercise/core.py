@@ -8,7 +8,7 @@ from typing import TypedDict
 
 class AboveBelow(TypedDict):
     """Type hint for 'above-below' dictionary."""
-    
+
     above: int
     below: int
 
