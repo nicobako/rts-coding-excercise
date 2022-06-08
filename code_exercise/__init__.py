@@ -1,1 +1,1 @@
-from .core import SequenceComparison
+from .core import SequenceComparison, string_rotation

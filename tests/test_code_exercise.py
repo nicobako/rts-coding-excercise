@@ -18,4 +18,19 @@ def test_above_below(
     actual = sc.above_below(sequence, value)
     assert expected == actual
 
+@pytest.mark.parametrize(
+    ["string", "rotation", "expected"],
+    [
+        ("MyString", 2, "ngMyStri"),
+        ("MyString", 0, "MyString"),
+        ("other_string", 5, "tringother_s")
+    ]
+)
+def test_string_rotation(
+    string:str,
+    rotation:int,
+    expected:str,
+):
+    actual = ce.string_rotation(string, rotation)
+    assert expected == actual
 

@@ -23,3 +23,13 @@ class SequenceComparison:
             "below":sum(i < value for i in sequence),
         }
         
+
+def string_rotation(
+    string:str,
+    rotation:int,
+)->str:
+    """Rotate a string."""
+    tail = string[0:-rotation:1]
+    head = string[-rotation::1]
+
+    return head + tail
